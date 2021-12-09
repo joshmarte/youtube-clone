@@ -1,11 +1,11 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
-import NavBar from './Components/NavBar';
-// import Header from "./Header"
-import About from './Components/About';
+import React, { Component } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import NavBar from "./components/NavBar";
+import About from "./components/About";
+import Results from "./components/Results";
 
 require("dotenv").config();
-
 
 class App extends Component {
   constructor() {
@@ -33,19 +33,23 @@ class App extends Component {
   render() {
     return (
       <div>
-         <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<NavBar/>}/>
-            <Route path="/about" element={<><NavBar/><About/></>}/>
-          </Routes>
-         </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<NavBar />} />
+          <Route
+            path="/about"
+            element={
+              <>
+                <NavBar />
+                <About />
+              </>
+            }
+          />
+        </Routes>
         Hi Guys!
         <Results results={this.state.apiResults} />
       </div>
     );
   }
-
 }
-
 
 export default App;
