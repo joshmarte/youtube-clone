@@ -7,7 +7,7 @@ import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Results from "./components/Results";
 import SearchBar from "./components/searchBar";
-// import Comments from "./components/comments"
+import Video from "./components/Video";
 
 require("dotenv").config();
 
@@ -43,23 +43,32 @@ class App extends Component {
     this.fetchData();
   };
 
+  handleClearHome = () => {
+    this.setState({
+      apiResults: [],
+    });
+  };
+
   render() {
     return (
       <div>
-        <NavBar />
+        <NavBar clearHome={this.handleClearHome} />
         <Routes>
+          <Route path="/about" element={<About />} />
           <Route
             path="/"
             element={
-              <SearchBar
-                handleChange={this.handleChange}
-                handleSubmit={this.handleSubmit}
-              />
+              <>
+                <SearchBar
+                  handleChange={this.handleChange}
+                  handleSubmit={this.handleSubmit}
+                />
+                <Results results={this.state.apiResults} />
+              </>
             }
           />
-          <Route path="/about" element={<About />} />
+          <Route path="/videos/:id" element={<Video />} />
         </Routes>
-        <Results results={this.state.apiResults} />
       </div>
     );
   }
