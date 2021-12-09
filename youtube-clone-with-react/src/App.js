@@ -32,10 +32,9 @@ class App extends Component {
   };
 
 
-
   getVideos = async () => {
     const { searchTerm } = this.state;
-    const videos = await API_KEY.searchResults(searchInput);
+    const videos = await apiResults.searchResults(searchInput);
     this.setState({ videos, searchInput: "" });
   };
 
