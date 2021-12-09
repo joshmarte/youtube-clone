@@ -17,8 +17,6 @@ class App extends Component {
     this.state = {
       searchTerm: "",
       apiResults: [],
-      // results: false,
-      // searchInput: ""
     };
   }
 
@@ -34,33 +32,15 @@ class App extends Component {
     });
   };
 
-  // getVideos = async () => {
-  //   const { searchTerm } = this.state;
-  //   const videos = await apiResults.searchResults(searchInput);
-  //   this.setState({ videos, searchInput: "" });
-  // };
-
   handleChange = (event) => {
     this.setState({
-      searchInput: event.target.value,
+      searchTerm: event.target.value,
     });
   };
 
-  handleSubmit = async (event) => {
+  handleSubmit = (event) => {
     event.preventDefault();
-    try {
-      this.getVideos();
-      this.setState({
-        error: false,
-      });
-    } catch (error) {
-      this.setState({
-        error: true,
-        searchInput: "",
-        videos: [],
-      });
-      alert(error);
-    }
+    this.fetchData();
   };
 
   render() {
@@ -70,7 +50,12 @@ class App extends Component {
         <Routes>
           <Route
             path="/"
-            element={<SearchBar handleChange={this.handleChange} />}
+            element={
+              <SearchBar
+                handleChange={this.handleChange}
+                handleSubmit={this.handleSubmit}
+              />
+            }
           />
           <Route path="/about" element={<About />} />
         </Routes>
