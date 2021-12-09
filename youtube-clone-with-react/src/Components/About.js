@@ -10,9 +10,10 @@ const About = () =>{
       <p>The youtube clone that we have created a React application that lets you search for YouTube videos using the YouTube API.</p>
       <div>
         <h4>The Creators of the project</h4>
-          <ul>
-              <li><img className="faceCard" src="https://media-exp1.licdn.com/dms/image/C4D03AQF26_amAxAbxw/profile-displayphoto-shrink_800_800/0/1606243992646?e=1644451200&v=beta&t=5covpchcGJuAXb2rIR68wOkVJPkDO2LminSIyixmmg0" alt="theopic"/></li>
-              <li>Theodore</li>
+        <div className="bios">
+            <div className= "tellMeMore">
+              <div><img className="faceCard" src="https://media-exp1.licdn.com/dms/image/C4D03AQF26_amAxAbxw/profile-displayphoto-shrink_800_800/0/1606243992646?e=1644451200&v=beta&t=5covpchcGJuAXb2rIR68wOkVJPkDO2LminSIyixmmg0" alt="theopic"/></div>
+              <div className= "name">Theodore</div>
               <a href="https://www.linkedin.com/in/theodore-frazier/">LinkedIn Profile | </a>
               <a href="https://github.com/TheodoreBFrazier">GitHub</a>
              
@@ -24,8 +25,14 @@ const About = () =>{
 
                 In my spare time, you can find me playing my oboe, and exploring the sights of New York City.
               </p>
-              <li><img className="faceCard" src="https://media-exp1.licdn.com/dms/image/C4E03AQFHO4t4HsXEQQ/profile-displayphoto-shrink_400_400/0/1628525034697?e=1644451200&v=beta&t=mBHqirWaOTRrzrWLW6GpTSlckI9lXaaOaiSEKmPlVhA" alt="joshpic"/></li>
-              <li>Josh</li>
+              </div>
+
+              <div className= "tellMeMore">
+              <div>
+                <img className="faceCard" src="https://media-exp1.licdn.com/dms/image/C4E03AQFHO4t4HsXEQQ/profile-displayphoto-shrink_400_400/0/1628525034697?e=1644451200&v=beta&t=mBHqirWaOTRrzrWLW6GpTSlckI9lXaaOaiSEKmPlVhA" alt="joshpic"/></div>
+              
+              <div className= "name">Josh</div>
+              
               <a href="https://www.linkedin.com/in/josh-marte/">LinkedIn Profile | </a>
               {/* <a href="">GitHub</a> */}
 
@@ -39,8 +46,14 @@ const About = () =>{
 
                   My hobbies include birdwatching, mushroom foraging, exploring nature, soccer and basketball.
               </p>
-              <li><img className="faceCard" src="https://media-exp1.licdn.com/dms/image/C4D03AQGhOggyBlMCew/profile-displayphoto-shrink_400_400/0/1609928869014?e=1644451200&v=beta&t=3idiR0Y58qDNCTByhTeJ7y0J4aZ-Vuf5sdc1OgJOwrs" alt="kiyomipic"/></li>
-              <li>Kiyomi</li> 
+              </div>
+
+              <div className= "tellMeMore">
+              <div>
+                <img className="faceCard" src="https://media-exp1.licdn.com/dms/image/C4D03AQGhOggyBlMCew/profile-displayphoto-shrink_400_400/0/1609928869014?e=1644451200&v=beta&t=3idiR0Y58qDNCTByhTeJ7y0J4aZ-Vuf5sdc1OgJOwrs" alt="kiyomipic"/></div>
+              
+              <div className= "name">Kiyomi</div>
+               
               <a href="https://www.linkedin.com/in/kiyomi-rodgers-denniston-327764177/">LinkedIn Profile | </a>
               <a href="https://github.com/KiRodgersDenn">GitHub</a>
               <p>Zodiac Sign: Leo</p>
@@ -48,7 +61,8 @@ const About = () =>{
               <p>
               I have been teaching for five years now and am ready to take the skills that I have learned in Education to a new career in Technology. As a teacher I have learned the art of patience, the need to be flexible and the importance of creativity. My students make up such a large portion of my world that it is hard to imagine a world that doesn’t include them—I am embarking on this new journey so that I can show them that there are other career options available and the path most taken isn’t the only path.
               </p>
-          </ul>
+              </div>
+          </div>
       </div>
     </div>
   );
