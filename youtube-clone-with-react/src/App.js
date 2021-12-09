@@ -1,11 +1,13 @@
 import React, { Component } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import NavBar from "./components/NavBar";
+import About from "./components/About";
 import Results from "./components/Results";
 import SearchBar from "./components/searchBar";
 import Comments from "./components/comments"
 
 require("dotenv").config();
-
 
 class App extends Component {
   constructor() {
@@ -64,7 +66,23 @@ class App extends Component {
   render() {
     return (
       <div>
+
         <SearchBar />
+
+        <Routes>
+          <Route path="/" element={<NavBar />} />
+          <Route
+            path="/about"
+            element={
+              <>
+                <NavBar />
+                <About />
+              </>
+            }
+          />
+        </Routes>
+        Hi Guys!
+<SearchBar />
         <Results results={this.state.apiResults} />
       </div>
     );

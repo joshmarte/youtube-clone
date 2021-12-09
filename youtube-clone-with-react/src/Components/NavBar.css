@@ -1,0 +1,25 @@
+.NavBar{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    width: 100%;
+    background-color: red;
+    overflow: auto;
+    height: 50px;
+    align-items: center;
+    justify-items: center;
+}
+img {
+    height: 50px;
+}
+
+.NavBarLink {
+    text-align: center;
+}
+
+.NavBarLink a{
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: red;
+}
