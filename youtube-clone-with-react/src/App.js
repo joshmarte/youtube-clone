@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
 import Results from "./components/Results";
+import SearchBar from "./components/searchBar";
+import Comments from "./components/comments"
 
 require("dotenv").config();
 
@@ -12,6 +14,7 @@ class App extends Component {
       searchTerm: "",
       apiResults: [],
       results: false,
+      searchInput: ""
     };
   }
 
@@ -28,10 +31,41 @@ class App extends Component {
     });
   };
 
+
+
+  getVideos = async () => {
+    const { searchTerm } = this.state;
+    const videos = await API_KEY.searchResults(searchInput);
+    this.setState({ videos, searchInput: "" });
+  };
+
+  handleChange = (event) => {
+    this.setState({
+      searchInput: event.target.value,
+    });
+  };
+
+  handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      this.getVideos();
+      this.setState({
+        error: false,
+      });
+    } catch (error) {
+      this.setState({
+        error: true,
+        searchInput: "",
+        videos: [],
+      });
+      alert(error);
+    }
+  };
+
   render() {
     return (
       <div>
-        Hi Guys!
+        <SearchBar />
         <Results results={this.state.apiResults} />
       </div>
     );

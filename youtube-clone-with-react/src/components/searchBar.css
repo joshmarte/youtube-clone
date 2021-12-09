@@ -1,0 +1,9 @@
+#search-bar {
+    align-items: center;
+    height: 50px;
+    width: 450px;
+    color: black;
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 25px;
+}
