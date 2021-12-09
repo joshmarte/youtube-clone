@@ -22,6 +22,7 @@ class App extends Component {
 
   fetchData = async () => {
     const API_KEY = `${process.env.REACT_APP_API_KEY}`;
+    console.log(API_KEY)
     let res = await fetch(
       `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${this.state.searchTerm}&type=video&key=${API_KEY}`
     );
