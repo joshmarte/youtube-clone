@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+
 import "./App.css";
+
 import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Results from "./components/Results";
 import SearchBar from "./components/searchBar";
-import Comments from "./components/comments"
+// import Comments from "./components/comments"
 
 require("dotenv").config();
 
@@ -15,8 +17,8 @@ class App extends Component {
     this.state = {
       searchTerm: "",
       apiResults: [],
-      results: false,
-      searchInput: ""
+      // results: false,
+      // searchInput: ""
     };
   }
 
@@ -27,18 +29,16 @@ class App extends Component {
     );
     let data = await res.json();
     this.setState({
-      // searchTerm: "",
+      searchTerm: "",
       apiResults: data.items,
-      results: true,
     });
   };
 
-
-  getVideos = async () => {
-    const { searchTerm } = this.state;
-    const videos = await apiResults.searchResults(searchInput);
-    this.setState({ videos, searchInput: "" });
-  };
+  // getVideos = async () => {
+  //   const { searchTerm } = this.state;
+  //   const videos = await apiResults.searchResults(searchInput);
+  //   this.setState({ videos, searchInput: "" });
+  // };
 
   handleChange = (event) => {
     this.setState({
@@ -66,23 +66,15 @@ class App extends Component {
   render() {
     return (
       <div>
-
-        <SearchBar />
-
+        <NavBar />
         <Routes>
-          <Route path="/" element={<NavBar />} />
           <Route
-            path="/about"
-            element={
-              <>
-                <NavBar />
-                <About />
-              </>
-            }
+            path="/"
+            element={<SearchBar handleChange={this.handleChange} />}
           />
+          <Route path="/about" element={<About />} />
         </Routes>
         Hi Guys!
-<SearchBar />
         <Results results={this.state.apiResults} />
       </div>
     );
