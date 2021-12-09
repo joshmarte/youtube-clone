@@ -1,0 +1,9 @@
+ul {
+    list-style-type: none;
+}
+.faceCard {
+    height: 100px;
+}
+li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
