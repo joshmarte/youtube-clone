@@ -60,7 +60,6 @@ class App extends Component {
           />
           <Route path="/about" element={<About />} />
         </Routes>
-        Hi Guys!
         <Results results={this.state.apiResults} />
       </div>
     );
