@@ -62,6 +62,7 @@ class App extends Component {
                 <SearchBar
                   handleChange={this.handleChange}
                   handleSubmit={this.handleSubmit}
+                  display={this.state.apiResults.length}
                 />
                 <Results results={this.state.apiResults} />
               </>
