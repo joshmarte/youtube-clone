@@ -12,7 +12,7 @@ const About = () => {
       </p>
 
       <div className="creators">
-        <h4>The Creators of the project</h4>
+        <h4>The Creators of the Project</h4>
       </div>
 
       <div>
@@ -119,7 +119,6 @@ const About = () => {
         </div>
       </div>
     </div>
-    
   );
 };
 export default About;

@@ -13,6 +13,7 @@ ul {
 .faceCard {
   margin-top: 35px;
   height: 150px;
+  border-radius: 50%;
 }
 
 /*     position: relative;
