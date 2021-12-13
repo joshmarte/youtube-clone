@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Results from "./components/Results";
 import SearchBar from "./components/searchBar";
+import Video from "./components/Video"
 // import Comments from "./components/comments"
 
 require("dotenv").config();
@@ -58,7 +59,9 @@ class App extends Component {
             }
           />
           <Route path="/about" element={<About />} />
+          <Route path="/videos/:id" element={<Video />} />
         </Routes>
+            {/* the results will show up becuase it is outside of routes */}
         <Results results={this.state.apiResults} />
       </div>
     );
