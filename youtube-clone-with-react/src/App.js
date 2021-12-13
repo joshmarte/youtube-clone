@@ -3,12 +3,11 @@ import { Route, Routes } from "react-router-dom";
 
 import "./App.css";
 
-import NavBar from "./components/NavBar";
-import About from "./components/About";
-import Results from "./components/Results";
-import SearchBar from "./components/searchBar";
-import Video from "./components/Video";
-
+import NavBar from "./component/NavBar";
+import About from "./component/About";
+import Results from "./component/Results";
+import SearchBar from "./component/searchBar";
+import Video from "./component/Video";
 
 require("dotenv").config();
 
