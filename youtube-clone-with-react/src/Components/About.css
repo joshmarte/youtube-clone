@@ -1,17 +1,20 @@
-
 .about-paragaph {
   margin-left: 100px;
 }
 
+.pad {
+  margin-left: 10px;
+}
+
 ul {
-    list-style-type: none;
-    display: inline-block;
+  list-style-type: none;
+  display: inline-block;
 }
 .faceCard {
-    margin-top: 35px;
-    height: 150px;
+  margin-top: 35px;
+  height: 150px;
 }
-  
+
 /*     position: relative;
     width: 100px;
     height: 100px;
@@ -50,23 +53,24 @@ a:link#link {
 }*/
 
 li {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .creators {
   margin-top: 90px;
   margin-left: 100px;
+  text-align: center;
 }
 
-.bios{
-    height: 100 px;
-    width: auto;
-    display: flex;
-
+.bios {
+  height: 100 px;
+  width: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .tellMeMore {
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -76,7 +80,7 @@ li {
 
     margin: auto;
     text-align: center; */
-    /* font-family: 'Roboto', Arial, sans-serif;
+  /* font-family: 'Roboto', Arial, sans-serif;
     position: relative;
     overflow: hidden;
     margin: 10px;
@@ -87,30 +91,30 @@ li {
     text-align: left;
     line-height: 1.4em;
     background-color: #141414; */
-    font-family: 'Lato', Arial, sans-serif;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    margin: 10px;
-    min-width: 250px;
-    max-width: 310px;
-    width: 100%;
-    background-color: #ffffff;
-    color: #2B2B2B;
-    text-align: center;
-    font-size: 16px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15)
-  }
+  font-family: "Lato", Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 250px;
+  max-width: 310px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #2b2b2b;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
 
-  .tellmemore * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  
-  .name {
-    margin: 10px;
-    color: grey;
-  
+.tellmemore * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.name {
+  margin: 10px;
+  color: grey;
+
   /* button {
     border: none;
     outline: 0;
@@ -124,19 +128,17 @@ li {
     font-size: 18px;
   } */
 
-    font-size: 21px;
-  }
-  
+  font-size: 21px;
+}
 
-  a {
-    text-decoration: none;
-    font-size: 14px;
+a {
+  text-decoration: none;
+  font-size: 14px;
+}
 
-  }
-  
- .aboutParagaph {
-   text-align: left;
-   font-size: 10pt;
-   margin: 25px;;
- color: black;
- }
+.aboutParagaph {
+  text-align: left;
+  font-size: 10pt;
+  margin: 25px;
+  color: black;
+}
