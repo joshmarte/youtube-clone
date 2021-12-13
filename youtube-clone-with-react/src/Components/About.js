@@ -4,11 +4,8 @@ import './About.css'
 
 const About = () => {
   return (
-    <div>
-
-      <div className='about-paragaph'>
-      <h2>About Us</h2>
-
+    <div className= "aboutPage">
+      <h2>About</h2>
       <h3>Brief Description</h3>
 
       <p>The youtube clone that we have created a React application that lets you search for YouTube videos using the YouTube API.</p>
@@ -36,11 +33,7 @@ const About = () => {
             <p> Zodiac Sign: Cancer </p>
             
             <p className="aboutParagaph">
-              My background prior to Pursuit is in customer service and office administration, where I have proven myself to be a loyal and contentious employee at several top tier organizations, where I refined my communication skills, mastering the ability communicate clearly and concisely.
-
-              I am grateful for my opportunity at Pursuit as it allows me the opportunity to gain the skills necessary to bring my experience to the fast-growing tech field. My goal is be able to build impactful and beautiful client interfaces that convert customers into clients.
-
-              My hobbies innclude playing the oboe, and exploring the sights of New York City.
+              My background prior to Pursuit is in customer service and office administration, where I have proven myself to be a loyal and contentious employee at several top tier organizations, where I refined my communication skills, mastering the ability communicate clearly and concisely. I am grateful for my opportunity at Pursuit as it allows me the opportunity to gain the skills necessary to bring my experience to the fast-growing tech field. My goal is be able to build impactful and beautiful client interfaces that convert customers into clients. My hobbies innclude playing the oboe, and exploring the sights of New York City.
             </p>
 
           </div>
@@ -54,7 +47,7 @@ const About = () => {
 
             <div className="contactInfo">
               <a href="https://www.linkedin.com/in/josh-marte/">LinkedIn Profile | </a>
-              {/* <a href="">GitHub</a> */}
+              <a href="https://github.com/joshmarte/" target= "_blank" id="link">GitHub</a>
             </div>
             
             <p> Zodiac Sign: Virgo </p>
@@ -67,7 +60,6 @@ const About = () => {
 
               My hobbies include birdwatching, mushroom foraging, exploring nature, soccer and basketball.
             </p>
-
           </div>
 
           <div className="tellMeMore">
@@ -84,13 +76,8 @@ const About = () => {
             </div>
             
             <p className="aboutParagaph">
-              I have been teaching for five years now and am ready to take the skills that I have learned in Education to a new career in Technology. 
-              
-              As a teacher I have learned the art of patience, the need to be flexible and the importance of creativity. My students make up such a large portion of my world that it is hard to imagine a world that doesn’t include them.
-              
-              I am embarking on this new journey so that I can show them that there are other career options available and the path most taken isn’t the only path.
+ I have been teaching for five years now and am ready to take the skills that I have learned in Education to a new career in Technology. As a teacher I have learned the art of patience, the need to be flexible and the importance of creativity. My students make up such a large portion of my world that it is hard to imagine a world that doesn’t include them—I am embarking on this new journey so that I can show them that there are other career options available and the path most taken isn’t the only path.
             </p>
-
           </div>
 
         </div>
