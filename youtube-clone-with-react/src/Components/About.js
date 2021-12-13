@@ -4,6 +4,7 @@ import './About.css'
 
 const About = () => {
   return (
+    <div>
     <div className= "aboutPage">
       <h2>About</h2>
       <h3>Brief Description</h3>
@@ -83,6 +84,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    
   );
 }
 export default About;
